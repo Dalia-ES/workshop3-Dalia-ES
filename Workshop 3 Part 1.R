@@ -33,3 +33,11 @@ for(i in 1:length(words)){
   wordwords[i] <- gsub('$', 'word', words[i]) #Adds 'word' to the end of the string for each word in 'word'
 }
 print(wordwords)
+
+numbers <- c(1, 4, 7, 33, 12.1, 180000, -20.5)
+for(i in numbers){
+  if(i > 5){
+    print(i)
+  }
+}
+
