@@ -33,3 +33,10 @@ powers <- function(x){ #Allows you to replace x with any input
 powers(1)
 powers(30)
 powers(5189)
+
+powers <- function(x, y = 2){ #Creates a default input for y, which can be adjusted
+  z <- x ^ y
+  return(c(z))
+}
+powers(3)
+powers(3, 3) #Changes the y default to 3
