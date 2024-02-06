@@ -9,3 +9,10 @@ while(x %% 5 != 0 | x %% 6 != 0 | x %% 7 != 0 | x %% 8 != 0){ #The remainder of 
   x <- x + 1
 }
 print(paste('The lowest number that is a factor of 5, 6, 7 and 8 is ', x, sep = ''))
+
+x <- 0.999
+while(x>0.5){ 
+  x <- x*x #Creates a loop that squares x until it is less than 0.5
+  print(x)
+}
+print(x)
