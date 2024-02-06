@@ -20,3 +20,9 @@ for(word in shrek_quote){
 for(donkey in 1:length(shrek_quote)){ #Alternative method to the above
   print(toupper(shrek_quote[donkey])) #The word 'donkey' can be replaced by any word
 }
+output <- vector() #Creates an empty vector that we can fill with values
+input <- c('red', 'yellow', 'green', 'blue', 'purple')
+for(i in 1:length(input)){
+  output[i] <- nchar(input[i]) #Counts the number of characters of each word in input
+}
+print(output)
