@@ -13,3 +13,10 @@ for(i in 1:11){
   print(y)
   print(y*y) #Prints y+1 times y+1 (the square root of each number)
 }
+shrek_quote <- c('What', 'are', 'you', 'doing', 'in', 'my', 'swamp')
+for(word in shrek_quote){
+  print(toupper(word)) #Capitalizes the words
+}
+for(donkey in 1:length(shrek_quote)){ #Alternative method to the above
+  print(toupper(shrek_quote[donkey])) #The word 'donkey' can be replaced by any word
+}
