@@ -25,4 +25,11 @@ powers(1)
 powers(30)
 powers(5189)
 
-
+powers <- function(x){ #Allows you to replace x with any input
+  y <- x ^ 2 #Squares x input
+  z <- x ^ 3 #Cubes x input
+  return(c( y, z)) #Prints answers from y and z equations
+}
+powers(1)
+powers(30)
+powers(5189)
