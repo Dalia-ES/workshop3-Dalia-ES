@@ -16,3 +16,13 @@ while(x>0.5){
   print(x)
 }
 print(x)
+
+powers <- function(x){ #Allows you to replace x with any input
+  y <- x ^ 2
+  return(y)
+}
+powers(1)
+powers(30)
+powers(5189)
+
+
