@@ -56,3 +56,16 @@ for(i in numbers){
     print(paste(i, ' is not less than five or is not an integer (or both!).', sep = ''))
   }
 }
+
+numbers <- c(1, 4, 7, 33, 12.1, 180000,-20.5)
+for(i in numbers){
+  if(i < 5 & i %% 1 == 0){
+    print(paste(i, ' is less than five and an integer.', sep = ''))
+  } else if(i < 5 & i %% 1 != 0){ #Creates an else if statement
+    print(paste(i, ' is not an integer.', sep = ''))
+  } else if(i >= 5 & i %% 1 == 0){
+    print(paste(i, ' is not less than five.', sep = ''))
+  } else {
+    print(paste(i, ' is not less than five and is not an integer.', sep = ''))
+  }
+}
