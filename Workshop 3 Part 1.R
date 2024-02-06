@@ -36,8 +36,15 @@ print(wordwords)
 
 numbers <- c(1, 4, 7, 33, 12.1, 180000, -20.5)
 for(i in numbers){
-  if(i > 5){
+  if(i > 5){ #Creates a conditional if statement, printing numbers if they are larger than 5
     print(i)
+  }
+}
+
+numbers <- c(1, 4, 7, 33, 12.1, 180000,-20.5)
+for(i in numbers){
+  if(i < 5 & i %% 1 == 0){ #Checks whether the remainder of dividing i by 1 is equal to 0 i.e. testing whether i is an integer
+    print(paste(i, ' is less than five and an integer.', sep = '')) #Paste function combines the input values in a single character string, and sep separates the data
   }
 }
 
