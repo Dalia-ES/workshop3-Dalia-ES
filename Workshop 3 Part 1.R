@@ -26,3 +26,10 @@ for(i in 1:length(input)){
   output[i] <- nchar(input[i]) #Counts the number of characters of each word in input
 }
 print(output)
+
+words <- c('buzz', 'cross', 'broads', 'fore', '')
+wordwords <- vector()
+for(i in 1:length(words)){
+  wordwords[i] <- gsub('$', 'word', words[i]) #Adds 'word' to the end of the string for each word in 'word'
+}
+print(wordwords)
