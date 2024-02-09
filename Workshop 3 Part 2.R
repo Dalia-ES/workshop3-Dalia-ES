@@ -40,3 +40,25 @@ powers <- function(x, y = 2){ #Creates a default input for y, which can be adjus
 }
 powers(3)
 powers(3, 3) #Changes the y default to 3
+
+quotes <- list()
+quotes[[1]] <- c("We're", 'gonna', 'need', 'a', 'bigger', 'boat.')
+quotes[[2]] <- c('Never', 'taken', 'a', 'shortcut', 'before?')
+
+quotes[1]
+
+fib <- function(x){ # define a function called fib that takes an input of x
+  sequence <- c(x, x) # create a sequence where the first two values are x
+  for(i in 3:10){ # loop over 3 to 10 
+    sequence[i] <- sequence[i - 1] + sequence[i - 2] # save each position as the sum of the previous two (in positions 3 to 10)
+  }
+  return(sequence) # return the sequence
+}
+fib(1) # this returns the standard fibonacci sequence
+fib(3) 
+output_list <- list()
+for(i in 1:10){
+  output_list[[i]] <- fib(i)
+}
+output_list[[2]]
+
